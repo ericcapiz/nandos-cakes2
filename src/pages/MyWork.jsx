@@ -2,28 +2,34 @@ import cake2 from '../img/Cakes/cake2.jpg';
 import cake3 from '../img/Cakes/cake3.jpg';
 import cake4 from '../img/Cakes/cake4.jpg';
 import {motion} from 'framer-motion';
-import {pageAnimation} from '../animation';
-
+import {pageAnimation, fade, photoAnim, lineAnim,slider, sliderContainer} from '../animation';
 import {Link} from 'react-router-dom';
-
 import styled from 'styled-components';
 
 const MyWork = () => {
     return ( 
         
         <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit">
+            <motion.div variants={sliderContainer}>
+                <Frame1 variants={slider}></Frame1>
+                <Frame2 variants={slider}></Frame2>
+                <Frame3 variants={slider}></Frame3>
+                <Frame4 variants={slider}></Frame4>
+            </motion.div>
             <Cake>
-                <h2>Cake 1</h2> 
-                <div className="line"> </div>
-                    <Link to="/work/cake2">
-                        <img src={cake2} alt="cake" />
+                <motion.h2 variants={fade}>Cake 1</motion.h2> 
+                <motion.div variants={lineAnim} className="line"> </motion.div>
+                    <Link to="/work/cake1">
+                        <Hide>
+                            <motion.img variants={photoAnim} src={cake2} alt="cake" />
+                        </Hide>
                     </Link>
                
             </Cake>
             <Cake>
                 <h2>Cake 2</h2>
                 <div className="line"></div>
-                    <Link to="/work/cake3">
+                    <Link to="/work/cake2">
                         <img src={cake3} alt="cake" />
                     </Link>
                 
@@ -31,7 +37,7 @@ const MyWork = () => {
             <Cake>
                 <h2>Cake 3</h2>
                 <div className="line"></div>
-                    <Link to="/work/cake4">
+                    <Link to="/work/cake3">
                         <img src={cake4} alt="cake" />
                     </Link>
                 
@@ -65,6 +71,29 @@ const Cake = styled.div `
         object-fit:contain;
 
     }
+`
+const Hide = styled.div `
+    overflow:hidden;
+`
+
+const Frame1 = styled(motion.div)`
+    position: fixed;
+    left:0;
+    top:10%;
+    width:100%;
+    height:100vh;
+    background: #fffebf;
+    z-index: 2;
+
+`
+const Frame2 = styled(Frame1) `
+background:#ff8efb;
+`
+const Frame3 = styled(Frame1) `
+background:#8ed2ff;
+`
+const Frame4 = styled(Frame1) `
+background:#8effa0;
 `
  
 export default MyWork;
