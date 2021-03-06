@@ -28,14 +28,18 @@ button{
 }
 
 h2{
+    font-family: 'Courgette', cursive;
     font-weight: lighter;
     font-size:4rem;
     color: #3d6c6e
     }
-h3{
+h3{ 
+    font-family: 'Satisfy', cursive;
+
     color:#2b737c;
     }
 h4{
+    font-size:2rem;
     font-weight: bold;
     color:#2b737c;
 }
@@ -50,7 +54,8 @@ p{
     padding: 3rem 0rem;
     color: grey;
     font-size: 1.4rem;
-    line-height: 150%normal;
+    line-height: 150%;
+    font-family: 'Kalam', cursive;
     }
 
 `
