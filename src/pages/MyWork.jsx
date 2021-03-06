@@ -2,11 +2,15 @@ import cake2 from '../img/Cakes/cake2.jpg';
 import cake3 from '../img/Cakes/cake3.jpg';
 import cake4 from '../img/Cakes/cake4.jpg';
 import {motion} from 'framer-motion';
-import {pageAnimation, fade, photoAnim, lineAnim,slider, sliderContainer} from '../animation';
+import {pageAnimation, scrollReveal, fade, photoAnim, lineAnim,slider, sliderContainer} from '../animation';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
+import {useScroll} from '../components/useScroll';
+
 
 const MyWork = () => {
+    const [element, controls] = useScroll();
+    const [element2, controls2] = useScroll();
     return ( 
         
         <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit">
@@ -26,17 +30,17 @@ const MyWork = () => {
                     </Link>
                
             </Cake>
-            <Cake>
+            <Cake ref={element} variants={scrollReveal} animate={controls} initial="hidden">
                 <h2>Cake 2</h2>
-                <div className="line"></div>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                     <Link to="/work/cake2">
                         <img src={cake3} alt="cake" />
                     </Link>
                 
             </Cake>
-            <Cake>
+            <Cake ref={element2} variants={scrollReveal} animate={controls2} initial="hidden">
                 <h2>Cake 3</h2>
-                <div className="line"></div>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                     <Link to="/work/cake3">
                         <img src={cake4} alt="cake" />
                     </Link>
@@ -54,7 +58,7 @@ const Work = styled(motion.div) `
         padding: 1rem 0rem;
     }
 `
-const Cake = styled.div `
+const Cake = styled(motion.div) `
     padding-bottom: 10rem;
     display:flex;
     flex-direction:column;

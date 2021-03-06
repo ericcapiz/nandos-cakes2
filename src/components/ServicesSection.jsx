@@ -3,14 +3,17 @@ import {faClock, faMoneyBillWave, faBirthdayCake, faUserTie } from '@fortawesome
 import bake from '../img/bake.jfif';
 import {About, Description, Image} from '../styles';
 import styled from 'styled-components';
+import {scrollReveal} from '../animation';
+import {useScroll} from './useScroll'
 
 const ServicesSection = () => {
+    const [element, controls] = useScroll();
     const style = {
         fontSize: "1.5rem", 
         color:"#2b737c"
     }
     return ( 
-        <Services>
+        <Services animate={controls} ref={element} initial="hidden" variants={scrollReveal}>
             <Description>
                 <h2>High <span>Quality </span>Cakes</h2>
                 <Cards>
