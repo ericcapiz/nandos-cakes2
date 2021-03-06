@@ -24,30 +24,30 @@ const MyWork = () => {
     return ( 
         
         <Work>
-            <Movie>
+            <Cake>
                 <h2>Cake 1</h2> 
                 <div className="line"> </div>
-                    <Link>
+                    <Link to="/work/cake2">
                         <img src={cake2} alt="cake" />
                     </Link>
                
-            </Movie>
-            <Movie>
+            </Cake>
+            <Cake>
                 <h2>Cake 2</h2>
                 <div className="line"></div>
-                    <Link>
+                    <Link to="/work/cake3">
                         <img src={cake3} alt="cake" />
                     </Link>
                 
-            </Movie>
-            <Movie>
+            </Cake>
+            <Cake>
                 <h2>Cake 3</h2>
                 <div className="line"></div>
-                    <Link>
+                    <Link to="/work/cake4">
                         <img src={cake4} alt="cake" />
                     </Link>
                 
-            </Movie>
+            </Cake>
         </Work>
      );
 }
@@ -60,7 +60,7 @@ const Work = styled.div `
         padding: 1rem 0rem;
     }
 `
-const Movie = styled.div `
+const Cake = styled.div `
     padding-bottom: 10rem;
     display:flex;
     flex-direction:column;
