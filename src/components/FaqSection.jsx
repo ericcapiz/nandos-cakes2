@@ -1,42 +1,44 @@
 import {About} from '../styles';
+import Toggle from './Toggle';
 import styled from 'styled-components';
+import{AnimateSharedLayout} from 'framer-motion';
 
 const FaqSection = () => {
     return (
         <Faq>
             <h2>Questions?</h2>
-            <div className="question">
-                <h4>How Do I Place An Order?</h4>
+            <AnimateSharedLayout>
+            <Toggle title="How Do I Place An Order?">
+                <div className="answer">
+
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, aliquam.</p>
+
+                </div>
+
+            </Toggle>
+            <Toggle title="When Can I Expect My Order?">
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, aliquam.</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>When Can I Expect My Order?</h4>
+
+            </Toggle>
+            <Toggle title="How Do I Pay?">
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, aliquam.</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>How Do I Pay?</h4>
+
+            </Toggle>
+            <Toggle title="What Pastries/Baked Foods Do You Make?">
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, aliquam.</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>What Pastries/Baked Foods Do You Make?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, aliquam.</p>
-                </div>
-                <div className="faq-line"></div>
-            </div>
+
+            </Toggle>
+            </AnimateSharedLayout>
         </Faq>
     );
 }
