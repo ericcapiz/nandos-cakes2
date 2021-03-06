@@ -35,7 +35,6 @@ h2{
     }
 h3{ 
     font-family: 'Satisfy', cursive;
-
     color:#2b737c;
     }
 h4{
@@ -48,7 +47,7 @@ a{
 }
 span{
     font-weight: bold;
-    color:grey;
+    color:#13a0a0;
 }
 p{
     padding: 3rem 0rem;
