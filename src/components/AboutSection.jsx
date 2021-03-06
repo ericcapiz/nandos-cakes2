@@ -1,19 +1,25 @@
 import cake1 from '../img/Cakes/cake1.jpg'
 import {About, Description, Image, Hide} from '../styles';
+import {motion} from 'framer-motion';
+
+
 
 const AboutSection = () => {
+
+    
+
     return (
         <About>
             <Description>
-                <div className="title">
+                <motion.div className="title">
                     <Hide>
-                        <h2>The More
-                            <span> Cake</span>,</h2>
+                        <motion.h2>The More
+                            <span> Cake</span>,</motion.h2>
                     </Hide>
                     <Hide>
-                        <h2>The Batter</h2>
+                        <motion.h2>The Batter</motion.h2>
                     </Hide>
-                </div>
+                </motion.div>
                 <p>Contact me for all your sweet tooth needs!</p>
                 <button>Contact Me</button>
             </Description>

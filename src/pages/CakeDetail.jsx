@@ -2,6 +2,8 @@ import {useState,useEffect} from 'react';
 import{useHistory} from 'react-router-dom';
 import {CakeState} from '../cakeState';
 import styled from 'styled-components';
+import {motion} from 'framer-motion';
+import {pageAnimation} from '../animation';
 
 
 const CakeDetails = () => {
@@ -20,7 +22,10 @@ const CakeDetails = () => {
     return ( 
         <>
         {cake && (
-        <Details>
+        <Details variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        exit="exit">
             <Headline>
                 <h2>{cake.title}</h2>
                 <img src={cake.mainImg} alt="cake" />
@@ -41,7 +46,7 @@ const CakeDetails = () => {
      );
 }
 
-const Details = styled.div `
+const Details = styled(motion.div) `
     color:white;
     h2{
         position: relative;
