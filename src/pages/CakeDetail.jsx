@@ -11,7 +11,7 @@ const CakeDetails = () => {
     const url = history.location.pathname;
 
     //Setting up state
-    const [cakes, setCakes] = useState(CakeState);
+    const [cakes] = useState(CakeState);
     const [cake, setCake] = useState(null);
 
     useEffect(()=>{
