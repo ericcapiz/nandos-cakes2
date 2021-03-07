@@ -1,4 +1,4 @@
-import cake2 from '../img/Cakes/cake2.jpg';
+import cake7 from '../img/Cakes/cake7.jpg';
 import cake3 from '../img/Cakes/cake3.jpg';
 import cake4 from '../img/Cakes/cake4.jpg';
 import {motion} from 'framer-motion';
@@ -25,7 +25,7 @@ const MyWork = () => {
                 <motion.div variants={lineAnim} className="line"> </motion.div>
                     <Link to="/work/cake1">
                         <Hide>
-                            <motion.img variants={photoAnim} src={cake2} alt="cake" />
+                            <motion.img variants={photoAnim} src={cake7} alt="cake" />
                         </Hide>
                     </Link>
                
@@ -70,9 +70,15 @@ const Cake = styled(motion.div) `
         margin-bottom: 3rem;
     }
     img{
-        width:100%;
+        /* width:100%;
         height:60%;
-        object-fit:contain;
+        object-fit:contain; */
+
+        width: 100%;
+        height: 70%;
+        object-fit:cover;
+        border-radius: 15%;
+        opacity: 85%;
 
     }
 `

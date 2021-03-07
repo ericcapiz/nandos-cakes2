@@ -68,6 +68,7 @@ const Headline = styled.div `
         width:100%;
         height:60vh;
         object-fit:contain;
+        
     }
 `
 const Reviews = styled.div `

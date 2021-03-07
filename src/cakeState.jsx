@@ -1,4 +1,4 @@
-import cake2 from './img/Cakes/cake2.jpg';
+import cake7 from './img/Cakes/cake7.jpg';
 import cake3 from './img/Cakes/cake3.jpg';
 import cake4 from './img/Cakes/cake4.jpg';
 import cake5 from './img/Cakes/cake5.jpg';
@@ -9,7 +9,7 @@ export const CakeState = () => {
     return [
       {
         title: "Cake 1",
-        mainImg: cake2,
+        mainImg: cake7,
         secondaryImg: cake5,
         url: "/work/cake1",
         reviews: [
