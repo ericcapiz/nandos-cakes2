@@ -52,6 +52,15 @@ const Details = styled(motion.div) `
         position: relative;
         left: 47%;
     }
+    @media (max-width: 350px){
+        overflow:hidden;
+        /* width:100vw; */
+        h2{
+            font-size: 3.5rem;
+            left: 30%;
+        }
+    }
+
 `
 
 const Headline = styled.div `
@@ -70,6 +79,12 @@ const Headline = styled.div `
         object-fit:contain;
         
     }
+    @media (max-width: 350px){
+        
+        img{
+            width: 100%;
+        }
+    }
 `
 const Reviews = styled.div `
     min-height: 80vh;
@@ -77,6 +92,13 @@ const Reviews = styled.div `
     margin: 0rem 10rem;
     align-items:center;
     justify-content: space-around;
+
+    @media (max-width: 350px){
+        display:inline-block;
+        text-align:center;
+        margin:0;
+        padding:0;
+    }
 `
 
 const AwardStyle = styled.div `

@@ -51,7 +51,7 @@ const StyledNav = styled.nav `
         position:relative;
     }
 
-    @media (max-width: 1300px){
+    @media (max-width: 768px){
         flex-direction:column;
         padding: 2rem 1rem;
         #logo{
@@ -60,6 +60,23 @@ const StyledNav = styled.nav `
         }
         ul{
             padding:2rem;
+            justify-content:space-around;
+            width:100%;
+            li{
+                padding:0;
+            }
+        }
+    }
+
+    @media (max-width: 350px){
+        flex-direction:column;
+        padding: 2rem 1rem;
+        #logo{
+            display: inline-block;
+            margin: 1rem;
+        }
+        ul{
+            padding:.8rem;
             justify-content:space-around;
             width:100%;
             li{

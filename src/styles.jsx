@@ -43,15 +43,21 @@ export const Image = styled.div `
         border-radius: 15%;
         opacity: 85%;
     }
-    @media (max-width: 1700px){
+    @media (max-width: 1200px){
         img{
             height: 40vh;
         }
     }
-    @media (max-width: 1300px){
+    @media (max-width: 768px){
         img{
             width:75%;
             height: 60vh;
+        }
+    }
+    @media (max-width: 350px){
+        img{
+            width:100%;
+            height: 20%;
         }
     }
 `

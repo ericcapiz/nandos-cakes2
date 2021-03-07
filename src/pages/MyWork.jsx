@@ -81,6 +81,14 @@ const Cake = styled(motion.div) `
         opacity: 85%;
 
     }
+    @media (max-width: 350px){
+        h2{
+            font-size: 2.5rem;
+        }
+        img{
+            width:80vw;
+        }
+    }
 `
 const Hide = styled.div `
     overflow:hidden;
