@@ -81,7 +81,7 @@ const Cake = styled(motion.div) `
         opacity: 85%;
 
     }
-    @media only screen and (min-width: 350px){
+    @media only screen and (max-width: 350px){
         h2{
             font-size: 2.5rem;
         }

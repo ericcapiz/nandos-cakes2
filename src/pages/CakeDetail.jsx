@@ -52,7 +52,7 @@ const Details = styled(motion.div) `
         position: relative;
         left: 47%;
     }
-    @media only screen and (min-width: 350px){
+    @media only screen and (max-width: 350px){
         overflow:hidden;
         /* width:100vw; */
         h2{
@@ -79,7 +79,7 @@ const Headline = styled.div `
         object-fit:contain;
         
     }
-    @media only screen and (min-width: 350px){
+    @media only screen and (max-width: 350px){
         
         img{
             width: 100%;
@@ -93,7 +93,7 @@ const Reviews = styled.div `
     align-items:center;
     justify-content: space-around;
 
-    @media only screen and (min-width: 350px){
+    @media only screen and (max-width: 350px){
         display:inline-block;
         text-align:center;
         margin:0;

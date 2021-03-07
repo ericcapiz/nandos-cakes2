@@ -54,7 +54,7 @@ export const Image = styled.div `
             height: 60vh;
         }
     }
-    @media (min-width: 350px){
+    @media (max-width: 350px){
         img{
             width:100%;
             height: 20%;
