@@ -51,24 +51,7 @@ const StyledNav = styled.nav `
         position:relative;
     }
 
-    @media only screen and (max-width: 768px){
-        flex-direction:column;
-        padding: 2rem 1rem;
-        #logo{
-            display: inline-block;
-            margin: 2rem;
-        }
-        ul{
-            padding:2rem;
-            justify-content:space-around;
-            width:100%;
-            li{
-                padding:0;
-            }
-        }
-    }
-
-    @media only screen and (max-width: 350px){
+    @media only screen and (min-width: 350px){
         flex-direction:column;
         padding: 2rem 1rem;
         #logo{
@@ -85,7 +68,15 @@ const StyledNav = styled.nav `
         }
     }
 
-    
+
+/* @media only screen and (min-width: 768px) {...}
+
+
+@media only screen and (min-width: 992px) {...}
+
+
+@media only screen and (min-width: 1200px) {...}  */
+
     
 `
 export default Nav;

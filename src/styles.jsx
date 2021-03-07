@@ -9,11 +9,14 @@ export const About = styled(motion.div) `
     justify-content:space-between;
     padding: 5rem 10rem;
     color:white;
-    @media (max-width: 1300px){
+
+    @media (min-width: 350px){
         display:block;
         padding: 2rem 2rem;
         text-align:center;
     }
+
+
 `;
 
 export const Description = styled.div `
@@ -24,8 +27,14 @@ export const Description = styled.div `
         font-weight: lighter;
     }
 
-    @media (max-width: 1300px){
+    @media (min-width: 350px){
         padding: 0;
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 2rem;
+        }
         button{
             margin: 2rem 0rem 5rem 0rem;
         }
@@ -43,12 +52,14 @@ export const Image = styled.div `
         border-radius: 15%;
         opacity: 85%;
     }
-    @media (max-width: 1200px){
+     @media (min-width: 350px){
         img{
-            height: 40vh;
+            margin-top: 4rem;
+            width:300px;
+            height: 300px;
         }
     }
-    @media (max-width: 768px){
+    /* @media (max-width: 768px){
         img{
             width:75%;
             height: 60vh;
@@ -59,7 +70,7 @@ export const Image = styled.div `
             width:100%;
             height: 20%;
         }
-    }
+    }  */
 `
 
 export const Hide = styled.div `

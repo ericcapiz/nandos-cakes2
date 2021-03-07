@@ -52,12 +52,10 @@ const Details = styled(motion.div) `
         position: relative;
         left: 47%;
     }
-    @media only screen and (max-width: 350px){
+    @media only screen and (min-width: 350px){
         overflow:hidden;
-        /* width:100vw; */
         h2{
-            font-size: 3.5rem;
-            left: 30%;
+            left: 27%;
         }
     }
 
@@ -79,8 +77,10 @@ const Headline = styled.div `
         object-fit:contain;
         
     }
-    @media only screen and (max-width: 350px){
-        
+    @media only screen and (min-width: 350px){
+        h2{
+            left: 30%;
+        }
         img{
             width: 100%;
         }
@@ -93,7 +93,7 @@ const Reviews = styled.div `
     align-items:center;
     justify-content: space-around;
 
-    @media only screen and (max-width: 350px){
+    @media only screen and (min-width: 350px){
         display:inline-block;
         text-align:center;
         margin:0;
