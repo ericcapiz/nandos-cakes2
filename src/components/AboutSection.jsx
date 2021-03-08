@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 import Wave from './Wave';
 import cake1 from '../img/Cakes/cake1.jpg'
 import {About, Description, Image, Hide} from '../styles';
@@ -23,7 +24,9 @@ const AboutSection = () => {
                     </Hide>
                 </motion.div>
                 <motion.p variants={fade}>Contact me for all your sweet tooth needs!</motion.p>
+                <Link to="/contact">
                 <motion.button variants={fade}>Contact Me</motion.button>
+                </Link>
             </Description>
             <Image>
                 <motion.img variants={photoAnim} src={cake1} alt="cake"/>
