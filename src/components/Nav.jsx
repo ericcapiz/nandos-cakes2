@@ -94,22 +94,16 @@ const StyledNav = styled.nav `
         }
     }
 
-
-
-   
-
-    
-
-    
-
-
-/* 
-
-
-@media only screen and (min-width: 992px) {...}
-
-
-@media only screen and (min-width: 1200px) {...}  */
+    @media only screen and (min-width: 769px)  and  (max-width: 1024px){
+        padding:2rem;
+        ul{
+            justify-content:space-around;
+            width:100%;
+            li{
+                padding:0;
+            }
+        }
+    }
 
     
 `

@@ -67,6 +67,14 @@ export const Image = styled.div `
         border-radius: 15%;
         opacity: 85%;
     }
+
+     @media only screen and (max-width: 2200px){
+        img{
+            height: 50%;
+            width:100%;
+        }
+    }
+
      @media (max-width: 400px){
         img{
             margin-top: 4rem;
@@ -79,6 +87,8 @@ export const Image = styled.div `
             width:90vw;
         }
     }
+
+   
 `
 
 export const Hide = styled.div `
