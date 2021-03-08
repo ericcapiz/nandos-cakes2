@@ -3,8 +3,9 @@ import {faClock, faMoneyBillWave, faBirthdayCake, faUserTie } from '@fortawesome
 import bake from '../img/bake.jfif';
 import {About, Description, Image} from '../styles';
 import styled from 'styled-components';
-import {scrollReveal} from '../animation';
-import {useScroll} from './useScroll'
+import {scrollReveal, fade} from '../animation';
+import {useScroll} from './useScroll';
+import {motion} from 'framer-motion';
 
 const ServicesSection = () => {
     const [element, controls] = useScroll();
@@ -34,7 +35,7 @@ const ServicesSection = () => {
                     <Card>
                         <div className="icon">
                             <FontAwesomeIcon style={style} icon={faBirthdayCake} />
-                            <h3>Custom Made Baked Goods</h3>
+                            <h3>Custom Made</h3>
                         </div>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
@@ -47,8 +48,11 @@ const ServicesSection = () => {
                     </Card>
                 </Cards>
             </Description>
-            <Image>
+            {/* <Image>
                 <img src={bake} alt='bake' />
+            </Image> */}
+            <Image>
+                <motion.img variants={fade} src={bake} alt="cake"/>
             </Image>
         </Services>
      );
@@ -62,12 +66,16 @@ const Services = styled(About)`
         width:70%;
         padding: 2rem 0rem 4rem 0rem; 
     }
-    @media (min-width: 350px){
-        
-        img{
-            margin-top: 4rem;
-            width:300px;
-            height: 300px;
+   
+    @media (max-width: 400px){
+        h2{
+        padding: 5rem 0rem;
+    }
+    }
+
+    @media only screen and (min-width: 401px)  and  (max-width: 768px){
+        p{
+            width:100%;
         }
     }
 `
@@ -75,9 +83,10 @@ const Services = styled(About)`
 const Cards = styled.div `
     display: flex;
     flex-wrap: wrap;
-    @media only screen and (min-width: 350px){
+    @media only screen and (max-width: 400px){
        justify-content:center;
     }
+
 `
 
 const Card = styled.div `
@@ -90,6 +99,17 @@ const Card = styled.div `
             padding: 1rem;
         }
     }
+    @media only screen and (max-width: 400px){
+        flex-basis: 15rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    @media only screen and (min-width: 401px)  and  (max-width: 768px){
+        flex-basis: 25rem;
+        text-align:center;
+    }
+
 `
  
 export default ServicesSection;

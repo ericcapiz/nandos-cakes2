@@ -52,12 +52,20 @@ const Details = styled(motion.div) `
         position: relative;
         left: 47%;
     }
-    @media only screen and (min-width: 350px){
+    @media only screen and (max-width: 400px){
         overflow:hidden;
         h2{
             left: 27%;
         }
     }
+
+    @media only screen and (min-width: 401px)  and  (max-width: 768px){
+        h2{
+            left: 27%;
+        }
+    }
+
+    
 
 `
 
@@ -77,12 +85,17 @@ const Headline = styled.div `
         object-fit:contain;
         
     }
-    @media only screen and (min-width: 350px){
+    @media only screen and (max-width: 400px){
         h2{
             left: 30%;
         }
         img{
             width: 100%;
+        }
+    }
+    @media only screen and (min-width: 401px)  and  (max-width: 768px){
+        h2{
+            left: 35%;
         }
     }
 `
@@ -93,11 +106,15 @@ const Reviews = styled.div `
     align-items:center;
     justify-content: space-around;
 
-    @media only screen and (min-width: 350px){
+    @media only screen and (max-width: 400px){
         display:inline-block;
         text-align:center;
         margin:0;
         padding:0;
+    }
+    @media only screen and (min-width: 401px)  and  (max-width: 768px){
+        flex-direction: column;
+        margin: 0;
     }
 `
 

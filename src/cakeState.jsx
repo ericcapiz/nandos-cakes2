@@ -32,9 +32,9 @@ export const CakeState = () => {
       },
       {
         title: "Cake 2",
-        mainImg: cake3,
+        mainImg: cake11,
         url: "/work/cake2",
-        secondaryImg: cake11,
+        secondaryImg: cake3,
         reviews: [
           {
             title: "Truly A masterpiece",

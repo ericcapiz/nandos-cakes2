@@ -1,5 +1,5 @@
 import cake7 from '../img/Cakes/cake7.jpg';
-import cake3 from '../img/Cakes/cake3.jpg';
+import cake11 from '../img/Cakes/cake11.jpg';
 import cake4 from '../img/Cakes/cake4.jpg';
 import {motion} from 'framer-motion';
 import {pageAnimation, scrollReveal, fade, photoAnim, lineAnim,slider, sliderContainer} from '../animation';
@@ -34,7 +34,9 @@ const MyWork = () => {
                 <h2>Cake 2</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                     <Link to="/work/cake2">
-                        <img src={cake3} alt="cake" />
+                        <Hide>
+                            <img src={cake11} alt="cake" />
+                        </Hide>
                     </Link>
                 
             </Cake>
@@ -57,6 +59,7 @@ const Work = styled(motion.div) `
     h2{
         padding: 1rem 0rem;
     }
+
 `
 const Cake = styled(motion.div) `
     padding-bottom: 10rem;
@@ -70,10 +73,7 @@ const Cake = styled(motion.div) `
         margin-bottom: 3rem;
     }
     img{
-        /* width:100%;
-        height:60%;
-        object-fit:contain; */
-
+        
         width: 100%;
         height: 70%;
         object-fit:cover;
@@ -81,12 +81,18 @@ const Cake = styled(motion.div) `
         opacity: 85%;
 
     }
-    @media only screen and (min-width: 350px){
+    @media only screen and (max-width: 400px){
+        
         h2{
-            font-size: 2.5rem;
+            font-size: 2.3rem;
         }
         img{
             width:80vw;
+        }
+    }
+    @media only screen and (min-width: 401px)  and  (max-width: 768px){
+        img{
+            width:60vw;
         }
     }
 `

@@ -10,9 +10,14 @@ export const About = styled(motion.div) `
     padding: 5rem 10rem;
     color:white;
 
-    @media (min-width: 350px){
+    @media (max-width: 400px){
         display:block;
         padding: 2rem 2rem;
+        text-align:center;
+    }
+
+    @media only screen and (min-width: 401px)  and  (max-width: 768px){
+       flex-direction: column;
         text-align:center;
     }
 
@@ -27,11 +32,21 @@ export const Description = styled.div `
         font-weight: lighter;
     }
 
-    @media (min-width: 350px){
+    @media (max-width: 400px){
         padding: 0;
         h2{
             font-size: 2rem;
         }
+        p{
+            font-size: 2rem;
+        }
+        button{
+            margin: 2rem 0rem 5rem 0rem;
+        }
+    }
+    @media only screen and (min-width: 401px)  and  (max-width: 768px){
+        padding: 0;
+        
         p{
             font-size: 2rem;
         }
@@ -52,25 +67,18 @@ export const Image = styled.div `
         border-radius: 15%;
         opacity: 85%;
     }
-     @media (min-width: 350px){
+     @media (max-width: 400px){
         img{
             margin-top: 4rem;
-            width:300px;
-            height: 300px;
+            height: 40vh;
         }
     }
-    /* @media (max-width: 768px){
+    @media only screen and (min-width: 401px)  and  (max-width: 768px){
         img{
-            width:75%;
-            height: 60vh;
+            height: 40vh;
+            width:90vw;
         }
     }
-    @media (max-width: 350px){
-        img{
-            width:100%;
-            height: 20%;
-        }
-    }  */
 `
 
 export const Hide = styled.div `

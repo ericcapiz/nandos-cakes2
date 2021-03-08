@@ -72,12 +72,12 @@ const Faq = styled(About)`
         }
     }
 
-    @media (min-width: 350px){
+    /* @media (max-width: 400px){
         h2{
             font-size:2.3rem;
         }
         
-    }
+    } */
 `
 
 export default FaqSection;
