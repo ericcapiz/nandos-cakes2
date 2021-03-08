@@ -52,6 +52,10 @@ const Details = styled(motion.div) `
         position: relative;
         left: 47%;
     }
+    @media only screen and (max-width: 2200px){
+        overflow:hidden;
+    }
+
     @media only screen and (max-width: 400px){
         overflow:hidden;
         h2{
@@ -60,8 +64,15 @@ const Details = styled(motion.div) `
     }
 
     @media only screen and (min-width: 401px)  and  (max-width: 768px){
+        overflow:hidden;
         h2{
             left: 27%;
+        }
+    }
+
+    @media only screen and (min-width: 769px)  and  (max-width: 932px){
+        h2{
+            left:40%;
         }
     }
 
@@ -98,6 +109,12 @@ const Headline = styled.div `
             left: 35%;
         }
     }
+    @media only screen and (min-width: 769px)  and  (max-width: 932px){
+        h2{
+            padding: 1.5rem 0rem;
+            left:40%;
+        }
+    }
 `
 const Reviews = styled.div `
     min-height: 80vh;
@@ -116,6 +133,9 @@ const Reviews = styled.div `
         flex-direction: column;
         margin: 0;
     }
+    @media only screen and (min-width: 769px)  and  (max-width: 932px){
+        margin: 1rem .7rem;
+    }
 `
 
 const AwardStyle = styled.div `
@@ -131,6 +151,9 @@ const AwardStyle = styled.div `
     }
     p{
         padding: 2rem 0rem;
+    }
+    @media only screen and (min-width: 769px)  and  (max-width: 932px){
+        padding:3rem;
     }
 `
 
