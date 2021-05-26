@@ -23,28 +23,28 @@ const ServicesSection = () => {
                             <FontAwesomeIcon style={style} icon={faClock} />
                             <h3>Fast Service</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Within 24hrs in most cases!</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <FontAwesomeIcon style={style} icon={faMoneyBillWave} />
                             <h3>Affordable</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Feel free to reach out for any promotial pricing/discounts!</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <FontAwesomeIcon style={style} icon={faBirthdayCake} />
                             <h3>Custom Made</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Dream Big!</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <FontAwesomeIcon style={style} icon={faUserTie} />
                             <h3>Professional Service</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>I’ve been baking since I was young but professionally for eight years.</p>
                     </Card>
                 </Cards>
             </Description>

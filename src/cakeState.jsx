@@ -16,17 +16,17 @@ export const CakeState = () => {
           {
             title: "Truly A masterpiece",
             description:
-              "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+              "“The most fascinating looking cake I have seen.”",
           },
           {
             title: "Freshly Baked.",
             description:
-              "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+              "“Nando's Cakes are always moist and taste sooooo goooood!”",
           },
           {
             title: "So Delicious.",
             description:
-              "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+              "“I wish I could eat this again!”",
           },
         ],
       },
@@ -37,19 +37,19 @@ export const CakeState = () => {
         secondaryImg: cake3,
         reviews: [
           {
-            title: "Truly A masterpiece",
+            title: "Impressed",
             description:
-              "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+              "“I was so shocked how this came out. I shouldn't have been because Nando's always have the best looking cakes!”",
           },
           {
-            title: "Freshly Baked.",
+            title: "Timely",
             description:
-              "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+              "“I swear as soon as I placed the order, it was ready to go :-)”",
           },
           {
-            title: "So Delicious.",
+            title: "Need More Cake",
             description:
-              "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+              "“Such an awesome job with this cake, I will be reaching out and placing more orders!”",
           },
         ],
       },
@@ -60,19 +60,19 @@ export const CakeState = () => {
         secondaryImg: cake17,
         reviews: [
           {
-            title: "Truly A masterpiece",
+            title: "Great Work",
             description:
-              "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+              "“I gave him a theme and let him just be creative with it and I was very pleased!”",
           },
           {
-            title: "Freshly Baked.",
+            title: "Yummy",
             description:
-              "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+              "“The cake was eaten up so quick! Another order coming in now!”",
           },
           {
-            title: "So Delicious.",
+            title: "The Best",
             description:
-              "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+              "“This was just the best themed cake I've seen. Such a shame it had to be eaten. LOL”",
           },
         ],
       },

@@ -14,30 +14,30 @@ const FaqSection = () => {
             <Toggle title="How Do I Place An Order?">
                 <div className="answer">
 
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, aliquam.</p>
+                    <p>New customers must send me a message through the contact form or througn the Nando's Cakes FB group!</p>
+                    <p>Family, friends and repeat customers can text/call!</p>
 
                 </div>
 
             </Toggle>
             <Toggle title="When Can I Expect My Order?">
                 <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, aliquam.</p>
+                    <p>I understand time is important! As clients are always putting in orders, I recommend 24-48hrs notice to give me ample time to put in my best quality work!</p>
                 </div>
 
             </Toggle>
             <Toggle title="How Do I Pay?">
                 <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, aliquam.</p>
+                    <p>As a new customer I would ask to pay half up front and the rest upon delivery!</p>
+                    <p>I can take payment via Cashapp, PayPall, Zelle and in some cases cash. I will be implementing updates to take payments through the site!</p>
                 </div>
 
             </Toggle>
             <Toggle title="What Pastries/Baked Foods Do You Make?">
                 <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, aliquam.</p>
+                    <p>Any and everything that your sweet tooth desires!</p>
+                    <p>I just ask you be as detailed as possible with what you want and I'll work my magic.</p>
+                    
                 </div>
 
             </Toggle>
