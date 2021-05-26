@@ -17,7 +17,7 @@
 
 ## Description
 
-I developed this site for a chicago start-up bakery business. The only had a fb group with over 350 followers and I offered my services to help market the business by creating their site.  View the app at https://nandos-cakes2.vercel.app/ and the fb group at https://www.facebook.com/nandoscakes95
+I developed this site for a chicago start-up bakery business. They have a fb channel with over 350 followers and I offered my services to help market the business by creating their site.  View the app at https://nandos-cakes2.vercel.app/ and the fb channel at https://www.facebook.com/nandoscakes95
 
 ### Technologies/Libraries
 
